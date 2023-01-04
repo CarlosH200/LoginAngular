@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LoginAngular';
+  tipoInput = 'password';
+
+   isHidden() {
+    if (this.tipoInput == 'password') {
+      this.tipoInput= 'text'
+    } else {
+      this.tipoInput='password'      
+    }
+    
+  }
+
+
+
+
 }
