@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { DashboarComponent } from './dashboar/dashboar.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
@@ -24,8 +24,8 @@ import { LoginComponent } from './login/login.component';
     MatIconModule,
     // DEFINE LAS RUTAS PARA NAVEGAR ENTRE PAGINAS
     RouterModule.forRoot([
-      {path: 'dashboard', component: DashboarComponent},
-      {path: 'login', component: LoginComponent}  
+      { path: 'dashboard', component: DashboarComponent },
+      { path: 'login', component: LoginComponent }
     ]),
   ],
   providers: [],
