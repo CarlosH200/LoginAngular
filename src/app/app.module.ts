@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { DashboarComponent } from './dashboar/dashboar.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     NgbModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatIconModule,

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink } from "@angular/router";
+
+
 
 @Component({
   selector: 'app-login',
@@ -7,19 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-  tipoInput = 'password';
-  hide = true;
 
-   isHidden() {
-    if (this.tipoInput == 'password') {
-      this.tipoInput= 'text'
+  inputEmail: string = '';
+  inputPassword: string = '';
+  User = 'admin';
+  password = '123';
+  islogin = false;
+
+  isLogin() {
+    if (this.inputEmail == this.User && this.inputPassword == this.password) {
+      this.islogin = true
+      alert('SESION INICIADA EXITOSAMENTE');
+      this.router.navigateByUrl("dashboard");
+
     } else {
-      this.tipoInput='password'      
+      this.islogin = false
+      alert('USUARIO O CONTRASEÑA INCORRECTOS');
+      this.router.navigateByUrl("login");
     }
-    
+
+
   }
+
 }
+
+
+
