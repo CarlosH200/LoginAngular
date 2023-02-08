@@ -5,17 +5,8 @@
   </button>
   <div class="collapse navbar-collapse" id="DASHBOARD">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="#" *ngFor="let Menudash of menu">{{Menudash.name}}</a>
       </li>
     </ul>
   </div>
