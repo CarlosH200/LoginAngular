@@ -22,10 +22,10 @@ Modulos: any = [];
 }
 
 const MENU = [
-  {id: 1, name:'Superman'},
-  {id: 2, name:'Batman'},
-  {id: 5, name:'BatGirl'},
-  {id: 3, name:'Robin'},
-  {id: 4, name:'Flash'}
+  {id: 1, name:'POS', screen: 'login'},
+  {id: 2, name:'INVENTARIO', screen: 'login'},
+  {id: 5, name:'COMPRAS', screen: 'login'},
+  {id: 3, name:'EMPRESA', screen: 'login'},
+  {id: 4, name:'CONFIGURACION', screen: 'login'}
 ];
 

@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
 
   inputEmail: string = '';
   inputPassword: string = '';
-  User = 'admin';
+  User = 'sa';
   password = '123';
   islogin = false;
 
@@ -25,8 +25,7 @@ export class LoginComponent implements OnInit {
     if (this.inputEmail == this.User && this.inputPassword == this.password) {
       this.islogin = true
       alert('SESION INICIADA EXITOSAMENTE');
-      this.router.navigateByUrl("dashboard");
-
+      this.router.navigateByUrl('dashboard');
     } else {
       this.islogin = false
       alert('USUARIO O CONTRASEÑA INCORRECTOS');
