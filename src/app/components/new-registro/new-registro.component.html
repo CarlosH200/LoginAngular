@@ -1,0 +1,41 @@
+<div class="backgroundAppDarkMode labelDarkMode">
+    <form>
+        <div class="row">
+            <div class="form-group col-md-6 rowPadding">
+                <label for="inputEmail4">Nombres</label>
+                <input [(ngModel)]="inputNombres" type="text" class="form-control" id="inputEmail4"
+                    placeholder="Nombres">
+            </div>
+            <div class="form-group col-md-6 rowPadding">
+                <label for="inputPassword4">Apellidos</label>
+                <input [(ngModel)]="inputApellidos" type="text" class="form-control" id="inputPassword4"
+                    placeholder="Apellidos">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 rowPadding">
+                <label for="inputAddress">Nombre Completo</label>
+                <input [(ngModel)]="inputNombres ++ inputApellidos" type="text" class="form-control" id="inputAddress"
+                    placeholder="Nombre Completo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-4 rowPadding">
+                <label for="inputEmail4">Telefono</label>
+                <input [(ngModel)]="inputTelefono" type="text" class="form-control" id="inputEmail4"
+                    placeholder="Telefono">
+            </div>
+            <div class="form-group col-md-4 rowPadding">
+                <label for="inputPassword4">Email</label>
+                <input [(ngModel)]="inputEmail" type="email" class="form-control" id="inputPassword4"
+                    placeholder="Email">
+            </div>
+            <div class="form-group col-md-4 rowPadding">
+                <label for="inputPassword4">DPI</label>
+                <input [(ngModel)]="inputDPI" type="text" class="form-control" id="inputPassword4" placeholder="DPI">
+            </div>
+        </div>
+    </form>
+</div>

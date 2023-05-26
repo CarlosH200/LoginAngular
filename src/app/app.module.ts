@@ -10,12 +10,16 @@ import { DashboarComponent } from './dashboar/dashboar.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { PruebaComponent } from './components/prueba/prueba.component';
+import { NewRegistroComponent } from './components/new-registro/new-registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboarComponent,
-    LoginComponent
+    LoginComponent,
+    PruebaComponent,
+    NewRegistroComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     // DEFINE LAS RUTAS PARA NAVEGAR ENTRE PAGINAS
     RouterModule.forRoot([
       { path: 'dashboard', component: DashboarComponent },
-      { path: 'login', component: LoginComponent }
+      { path: 'login', component: LoginComponent },
+      { path: '', component: LoginComponent },
     ]),
   ],
   providers: [],

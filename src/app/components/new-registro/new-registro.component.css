@@ -1,0 +1,24 @@
+/* Clase para el fondo de las pantallas modo obscuro */
+.backgroundAppDarkMode {
+  background-color: #413543;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+
+/* clase para el fondo de las pantallas modo claro */
+.backgroundAppLigthMode {
+  background-color: #413543;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo para labels de modo obscuro */
+.labelDarkMode {
+  color: #ffffff !important;
+}
+
+/* Espacio entre filas */
+.rowPadding{
+    padding-top: 20px;
+}

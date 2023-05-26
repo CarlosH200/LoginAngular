@@ -6,13 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboar.component.css']
 })
 export class DashboarComponent implements OnInit {
-Modulos: any = [];
+
 
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(MENU);
    
   }
  menu = MENU;
