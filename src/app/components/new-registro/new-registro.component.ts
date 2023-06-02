@@ -9,12 +9,14 @@ export class NewRegistroComponent implements OnInit {
 
   constructor() { }
 
-inputNombres: string = '';
-inputApellidos: string = '';
-inputNombreCompleto: string = '';
-inputTelefono: number = 0;
-inputEmail: string = '';
-inputDPI: string = '';
+  inputNombres: string = '';
+  inputApellidos: string = '';
+  inputNombreCompleto: string = '';
+  inputTelefono: number = 0;
+  inputEmail: string = '';
+  inputDPI: string = '';
+  inputDireccion: string = '';
+  inputObservacion: string = '';
 
 
 
