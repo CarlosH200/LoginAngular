@@ -1,0 +1,22 @@
+.containerPrincipal{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    /* centra contenido verticalmente */
+    align-items: center;
+    /* centra contenido horizontalmente */
+    justify-content: center;
+}
+
+.containerComponentsLogin{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background: #ffffff;
+}
+
+.buttonEye{
+    background-color: transparent;
+    border: transparent;
+}
