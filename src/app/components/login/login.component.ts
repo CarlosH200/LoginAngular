@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   viewDatosPassword() {
     if (this.viewPassword) {
-      this.viewPassword = false;
+      this.viewPassword=false;
       this.typeInputPassword = 'text';
     } else {
       this.viewPassword = true;

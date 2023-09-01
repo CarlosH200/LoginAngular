@@ -1,30 +1,37 @@
 <div class="containerPrincipal">
     <div class="containerComponentsLogin">
+        <!-- imagen de empresa o usuario -->
+        <img src=".\assets\user.png" class="imgLogo mb-3 rounded mx-auto d-block" alt="...">
         <form>
             <!-- Email input -->
-            <div class="form-outline mb-4">
+            <div class="form-outline">
                 <label class="form-label" for="form2Example1">Usuario</label>
                 <div class="input-group mb-3">
-                    <input type="email" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="email" class="form-control" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                      <button class="buttonEye" mat-icon-button matTooltip="Accent" color="accent" aria-label="Example icon-button with a heart icon">
-                        <mat-icon></mat-icon>
-                      </button>
+                        <button class="buttonEye" mat-icon-button matTooltip="Accent" color="accent"
+                            aria-label="Example icon-button with a heart icon">
+                            <mat-icon></mat-icon>
+                        </button>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <!-- Password input -->
-            <div class="form-outline mb-4">
+            <div class="form-outline">
                 <label class="form-label" for="form2Example2">Contraseña</label>
-                <div class="input-group mb-3">
-                    <input [type]="typeInputPassword" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group mb-3 ">
+                    <input [type]="typeInputPassword" class="form-control" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                      <button (click)="viewDatosPassword()" class="buttonEye" aria-label="Example icon-button with a heart icon">
-                        <mat-icon>visibility</mat-icon>
-                      </button>
+                        <button (click)="viewDatosPassword()" class="buttonEye"
+                            aria-label="Example icon-button with a heart icon">
+                            <mat-icon *ngIf="viewPassword">visibility</mat-icon>
+                            <mat-icon *ngIf="!viewPassword">visibility_off</mat-icon>
+                        </button>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <!-- 2 column grid layout for inline styling -->
@@ -39,12 +46,13 @@
             </div>
 
             <!-- Submit button -->
-            <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+            <div class="containerButton">
+                <button type="button" class="btn btn-secondary btn-block mb-4">Iniciar Sesion</button>
+            </div>
 
             <!-- Register buttons -->
             <div class="text-center">
                 <p>Not a member? <a href="#!">Register</a></p>
-                <p>or sign up with:</p>
                 <button type="button" class="btn btn-link btn-floating mx-1">
                     <i class="fab fa-facebook-f"></i>
                 </button>

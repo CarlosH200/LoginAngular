@@ -10,13 +10,23 @@
 }
 
 .containerComponentsLogin{
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 30px;
     background: #ffffff;
 }
 
+.imgLogo{
+    width: 150px !important;
+    height: 150px !important;
+}
+
 .buttonEye{
     background-color: transparent;
     border: transparent;
+}
+
+.containerButton{
+    display: flex;
+    justify-content: center;
 }
